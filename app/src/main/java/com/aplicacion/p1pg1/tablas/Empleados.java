@@ -9,6 +9,7 @@ public class Empleados
     private String apellidos;
     private Integer edad;
     private String correo;
+    private byte[] foto;
 
 
     public Empleados()
@@ -16,13 +17,16 @@ public class Empleados
         // Constructor Vacio
     }
 
-    public Empleados(Integer id, String nombres, String apellidos, Integer edad, String correo) {
+    public Empleados(Integer id, String nombres, String apellidos, Integer edad, String correo, byte[] foto) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.edad = edad;
         this.correo = correo;
+        this.foto = foto;
     }
+
+
 
     public Integer getId() {
         return id;
@@ -62,5 +66,13 @@ public class Empleados
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public void setFoto(byte[] foto) {
+        this.foto = foto;
+    }
+
+    public byte[] getFoto() {
+        return foto;
     }
 }
